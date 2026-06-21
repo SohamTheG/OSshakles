@@ -1,0 +1,9 @@
+# project 1: os shakles(productivity app)
+1. set timer for a specific time.
+2. lock the given tab or application in full screen.
+3. if you want to exit you have to write atleast 1 page of reason as to what will you do with this time and how is it better than doing actual work.
+4. app should be user friendly and easy to use.
+5. app should be deployable on any other pc.
+6. use latest tech stack and best suited for this job.
+7. with clean code and proper documentation.
+8. create a agents.md and architectur.md for your own understanding and keep updating it whenever there is a significant change in the project.

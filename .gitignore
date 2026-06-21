@@ -1,0 +1,16 @@
+node_modules/
+dist/
+release/
+dist-electron/
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+app/node_modules/
+app/dist/
+app/release/
+app/dist-electron/
+app/out/
