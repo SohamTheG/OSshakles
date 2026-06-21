@@ -29,6 +29,10 @@ Follow these instructions to get the application running on your local machine.
 
 ### Installation
 
+You can download the .exe from the Releases tab.
+Note: Because this app aggressively monitors active windows to prevent you from slacking off, Windows Defender may flag it. Allow it through your firewall if you actually want to be productive today.
+
+### github setup
 1. Clone the repository:
    ```bash
    git clone <your-repository-url>
@@ -89,23 +93,6 @@ We bypass this Windows-specific issue by globally disabling the sandbox on start
 app.commandLine.appendSwitch('no-sandbox');
 ```
 We also replaced the standard `file://` and `app://` protocol loading with an **embedded Node.js HTTP server** that serves the `dist/` folder over a random local port (e.g. `http://127.0.0.1:54321/`). This guarantees absolute immunity against Chromium CORS issues, protocol handlers, and `.asar` pathing bugs.
-
-## How to Publish to GitHub
-
-1. Ensure you are in the root directory (`e:\_project_work\OSshakles`).
-2. Initialize a git repository if you haven't already:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial release of OSshakles"
-   ```
-3. Go to GitHub and create a new repository (do not add a README or .gitignore since we already have them).
-4. Follow the instructions to push an existing repository from the command line:
-   ```bash
-   git remote add origin https://github.com/<your-username>/OSshakles.git
-   git branch -M main
-   git push -u origin main
-   ```
 
 ## Sharing With Friends
 
